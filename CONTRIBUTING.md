@@ -260,7 +260,7 @@ changelog: Something 3
 
 All code in this repository is under the [Apache-2.0] or the [MIT] license.
 
-<!-- adapted from https://github.com/servo/servo/blob/master/CONTRIBUTING.md -->
+<!-- adapted from https://github.com/servo/servo/blob/main/CONTRIBUTING.md -->
 
 [Apache-2.0]: https://www.apache.org/licenses/LICENSE-2.0
 [MIT]: https://opensource.org/licenses/MIT
