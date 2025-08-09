@@ -90,13 +90,12 @@ use itertools::Itertools;
 use rustc_abi::Integer;
 use rustc_ast::ast::{self, LitKind, RangeLimits};
 use rustc_ast::join_path_syms;
-use rustc_hir::attrs::AttributeKind;
-use rustc_hir::find_attr;
 use rustc_data_structures::fx::FxHashMap;
 use rustc_data_structures::packed::Pu128;
 use rustc_data_structures::unhash::UnindexMap;
 use rustc_hir::LangItem::{OptionNone, OptionSome, ResultErr, ResultOk};
 use rustc_hir::def::{DefKind, Res};
+use rustc_hir::attrs::AttributeKind;
 use rustc_hir::def_id::{DefId, LocalDefId, LocalModDefId};
 use rustc_hir::definitions::{DefPath, DefPathData};
 use rustc_hir::hir_id::{HirIdMap, HirIdSet};
@@ -106,7 +105,7 @@ use rustc_hir::{
     CoroutineKind, Destination, Expr, ExprField, ExprKind, FnDecl, FnRetTy, GenericArg, GenericArgs, HirId, Impl,
     ImplItem, ImplItemKind, Item, ItemKind, LangItem, LetStmt, MatchSource, Mutability, Node, OwnerId, OwnerNode,
     Param, Pat, PatExpr, PatExprKind, PatKind, Path, PathSegment, QPath, Stmt, StmtKind, TraitFn, TraitItem,
-    TraitItemKind, TraitRef, TyKind, UnOp, def,
+    TraitItemKind, TraitRef, TyKind, UnOp, def, find_attr,
 };
 use rustc_lexer::{FrontmatterAllowed, TokenKind, tokenize};
 use rustc_lint::{LateContext, Level, Lint, LintContext};
